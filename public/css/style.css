@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+:root{
+    --main-bg: #363636;
+    --main-color: #009ad8;;
+}
+
+html{
+    font-size: 80%;
+}
+
+body{
+    background-color: #009ad8;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    margin: 0;
+}
+
+.main_menu{
+    background-color: var(--main-bg);
+}
+
+.navbar{
+
+    color: white;
+    background-color: var(--main-bg);
+    padding: 4rem 0;
+
+}
+
+.navbar a{
+    color: white;
+    font-size: 1.8rem;
+}
+
+
+
+/*NAVBAR MOBILE TOGGLE START*/
+
+.navbar-toggler {
+    background: none;
+    border: 2px solid transparent;
+    color: white;
+    padding: 20px;
+    border-radius: 40px;
+    transition: .3s ease;
+}
+
+.navbar-toggler:hover, .navbar-toggler:active {
+        border-color: #009ad8;
+        color: #009ad8; 
+}
+
+/*NAVBAR MOBILE TOGGLE END*/
+
+/*MOBILE NAVBAR CONTENT START*/
+
+.mobile-collapse{
+    padding: 0 0 0 0;
+    margin-top: 0;
+   margin-bottom: 30px;
+   display: none;
+}
+
+
+.mobile-collapse .mobile-navbar-nav{
+    padding: 0;
+    background: #262936;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.mobile-collapse .mobile-navbar-nav .mobile-nav-item .mobile-nav-link {
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+    color: white; 
+}
+
+.mobile-collapse .mobile-navbar-nav .mobile-nav-item {
+    border-bottom: 1px solid gray; 
+    list-style: none;
+}
+
+.mobile-collapse .mobile-navbar-nav .mobile-nav-item:last-child{
+    border-bottom: none;
+}
+
+.mobile-collapse .mobile-navbar-nav .mobile-nav-item.active .mobile-nav-link {
+    color: #009ad8; 
+}
+
+/*MOBILE NAVBAR CONTENT END*/
+
+
+/*NAVBAR HOME CSS start*/
+
+.collapse .navbar-nav .nav-item{
+    float: left;
+    margin-left: 10px;
+    
+}
+
+.collapse .navbar-nav .nav-item .nav-link {
+    padding: 5px 25px;
+    font-size: 1rem;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    color: white;
+    transition: .3s ease;
+    font-weight: 400; }
+
+   .navbar-nav .nav-item.active .nav-link, .navbar-nav .nav-item .nav-link:hover{
+    border-color: #009ad8;
+    color: #009ad8; }
+
+
+/*NAVBAR HOME CSS end*/
+
+footer{
+    width: 100%;
+    background-color: var(--main-bg);
+    margin-top: auto;
+}
+
+footer p{
+    margin: 0;
+    text-align: center;
+    color: white;
+    line-height: 3rem;
+}
+
+.hero {
+    width: 100%;
+    background-size: cover;
+    padding: 70px 0;
+    min-height: 350px; 
+}
+
+/*SEARCH BAR START*/
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px; 
+}
+
+.button, form input[type="submit"], form button, form input[type="reset"] {
+    border: none;
+    background: #009ad8;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white; 
+}
+
+form input, form textarea, form select {
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 30px; 
+}
+  
+.find-location {
+    position: relative;
+    margin-bottom: 70px; 
+}
+
+.find-location input[type="text"] {
+      width: 100%;
+      padding: 20px 50px 20px 20px;
+      background: #1e202b;
+      color: white; 
+}
+
+.find-location input[type="submit"] {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      bottom: 5px;
+      padding: 0 40px; 
+}
+  
+
+/*SEARCH BAR END*/
+
+
+
+/*TEMPERATURE BAR START*/
+
+sup{
+    font-size: 70%;
+    vertical-align: super;
+  }
+
+.forecast-container {
+    width: 100%;
+    background: #323544;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: -150px;
+    margin-bottom: 50px; 
+}
+    
+.forecast-container .forecast {
+    display: table-cell;
+    vertical-align: top; }
+      
+.forecast-container .forecast:nth-child(even) {
+    background-color: #262936; 
+}
+@media screen and (max-width: 990px) {
+.forecast-container .forecast {
+    display: block;
+    width: 16.6667%;
+    float: left; 
+} 
+}
+
+/*DAY AND DATE*/
+.forecast-container .forecast.today {
+        width: 30rem; 
+}
+.forecast-container .forecast.today .forecast-header .day {
+            float: left; 
+}
+.forecast-container .forecast.today .forecast-header .date {
+            float: right; 
+}
+/*DAY AND DATE*/
+
+.forecast-container .forecast.today .forecast-content {
+          text-align: left;
+          padding-top: 30px;
+          padding-bottom: 30px; 
+}
+        
+.forecast-container .forecast.today .location {
+          font-size: 18px;
+          font-size: 1.2857142857em;
+          font-weight: 400; 
+}
+        
+.forecast-container .forecast.today .degree .num, .forecast-container .forecast.today .degree .forecast-icon {
+          display: inline-block;
+          vertical-align: middle; 
+}
+        
+          .forecast-container .forecast.today .degree .num {
+          font-size: 90px;
+          font-size: 6.4285714286rem;
+          margin-right: 30px; }
+        
+          .forecast-container .forecast.today span {
+          margin-right: 20px; }
+          
+          .forecast-container .forecast.today span img {
+            margin-right: 5px;
+            vertical-align: middle; }
+      
+            @media screen and (max-width: 990px) {
+          .forecast-container .forecast.today {
+            display: block;
+            width: 100%; } }
+      
+            .forecast-container .forecast .forecast-header {
+        background: rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        text-align: center;
+        font-weight: 400; }
+      
+.forecast-container .forecast .forecast-icon {
+        height: 50px; 
+}
+      
+        .forecast-container .forecast .forecast-content {
+        padding: 50px 20px 10px;
+        text-align: center; }
+      
+        .forecast-container .forecast .forecast-content .forecast-icon {
+          margin-bottom: 20px; }
+      
+          .forecast-container .forecast .forecast-content .degree {
+          font-size: 24px;
+          font-size: 1.7142857143em;
+          color: white;
+          font-weight: 700; }
+        
+          .forecast-container .forecast .forecast-content small {
+          font-size: 16px;
+          font-size: 1.1428571429em; }
+
+/*TEMPERATURE BAR END*/
