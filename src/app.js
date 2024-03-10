@@ -26,13 +26,7 @@ app.get("/",(rep,res) =>{
     res.render("index");
 })
 
-app.get("/about",(rep,res) =>{
-    res.render("about");
-})
 
-app.get("/contact",(rep,res) =>{
-    res.render("contact");
-})
 
 //error page
 app.get("*",(rep,res) =>{

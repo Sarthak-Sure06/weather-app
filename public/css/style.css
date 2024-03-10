@@ -35,7 +35,7 @@ body{
 
     color: white;
     background-color: var(--main-bg);
-    padding: 4rem 0;
+    padding: 2rem 0;
 
 }
 
@@ -174,7 +174,9 @@ form input, form textarea, form select {
 }
   
 .find-location {
+    width: 50%;
     position: relative;
+    margin-left: 25%;
     margin-bottom: 70px; 
 }
 
@@ -200,19 +202,16 @@ form input, form textarea, form select {
 
 /*TEMPERATURE BAR START*/
 
-sup{
-    font-size: 70%;
-    vertical-align: super;
-  }
 
 .forecast-container {
     width: 100%;
     background: #323544;
     display: table;
     table-layout: fixed;
-    width: 100%;
+    width: 50%;
     overflow: hidden;
     border-radius: 10px;
+    margin-left: 25%;
     margin-top: -150px;
     margin-bottom: 50px; 
 }
@@ -280,7 +279,7 @@ sup{
       
             .forecast-container .forecast .forecast-header {
         background: rgba(0, 0, 0, 0.1);
-        padding: 10px;
+        padding: 20px;
         text-align: center;
         font-weight: 400; }
       
